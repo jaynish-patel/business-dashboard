@@ -1,0 +1,30 @@
+services:
+  db:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: honeybee
+      MYSQL_USER: dashboard
+      MYSQL_PASSWORD: local_demo_only
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+    volumes:
+      - listings:/var/lib/mysql
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+    healthcheck:
+      test: ["CMD", "mysql", "-udashboard", "-plocal_demo_only", "honeybee", "-e", "SELECT 1 FROM listing_master LIMIT 1"]
+      interval: 5s
+      timeout: 4s
+      retries: 40
+  api:
+    build: ./backend
+    environment:
+      MYSQL_PASSWORD: local_demo_only
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      db:
+        condition: service_healthy
+  frontend:
+    build: ./frontend
+    ports: ["127.0.0.1:5173:5173"]
+    depends_on: [api]
+volumes:
+  listings:

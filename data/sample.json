@@ -1,0 +1,82 @@
+[
+  {
+    "business_name": "Demo Business 1",
+    "category": "Cafe",
+    "city": "Mumbai",
+    "address": "1 Example Road",
+    "phone": null,
+    "source": "Synthetic demo"
+  },
+  {
+    "business_name": "Demo Business 2",
+    "category": "Bookshop",
+    "city": "Mumbai",
+    "address": "2 Example Road",
+    "phone": null,
+    "source": "Synthetic demo"
+  },
+  {
+    "business_name": "Demo Business 3",
+    "category": "Bakery",
+    "city": "Mumbai",
+    "address": "3 Example Road",
+    "phone": null,
+    "source": "Synthetic demo"
+  },
+  {
+    "business_name": "Demo Business 4",
+    "category": "Florist",
+    "city": "Mumbai",
+    "address": "4 Example Road",
+    "phone": null,
+    "source": "Synthetic demo"
+  },
+  {
+    "business_name": "Demo Business 5",
+    "category": "Cafe",
+    "city": "Thane",
+    "address": "5 Example Road",
+    "phone": null,
+    "source": "Synthetic demo"
+  },
+  {
+    "business_name": "Demo Business 6",
+    "category": "Bookshop",
+    "city": "Thane",
+    "address": "6 Example Road",
+    "phone": null,
+    "source": "Synthetic demo"
+  },
+  {
+    "business_name": "Demo Business 7",
+    "category": "Bakery",
+    "city": "Thane",
+    "address": "7 Example Road",
+    "phone": null,
+    "source": "Synthetic demo"
+  },
+  {
+    "business_name": "Demo Business 8",
+    "category": "Florist",
+    "city": "Navi Mumbai",
+    "address": "8 Example Road",
+    "phone": null,
+    "source": "Synthetic demo"
+  },
+  {
+    "business_name": "Demo Business 9",
+    "category": "Cafe",
+    "city": "Navi Mumbai",
+    "address": "9 Example Road",
+    "phone": null,
+    "source": "Synthetic demo"
+  },
+  {
+    "business_name": "Demo Business 10",
+    "category": "Bookshop",
+    "city": "Navi Mumbai",
+    "address": "10 Example Road",
+    "phone": null,
+    "source": "Synthetic demo"
+  }
+]
